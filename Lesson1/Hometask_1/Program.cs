@@ -10,19 +10,15 @@ int B = int.Parse(Console.ReadLine()!);
 
 if (A>B)
 {
-Console.Write("a = ");
-Console.WriteLine(A);
-Console.Write("b = ");
-Console.WriteLine(B);
-Console.Write("Max = ");
-Console.Write(A);
+Console.Write($"a = {A} b = {B} Max = {B}");
+}
+else if (A==B)
+{
+Console.WriteLine($"a = {A} b = {B}");
+Console.WriteLine("a равно b ");
+Console.Write($"{A}={B}");
 }
 else 
 {
-Console.Write($"a = ");
-Console.WriteLine(A);
-Console.Write($"b = ");
-Console.WriteLine(B);
-Console.Write("Max = ");
-Console.Write(B);
+Console.Write($"a = {A} b = {B} Max = {B}");
 }
