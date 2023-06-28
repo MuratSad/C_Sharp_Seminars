@@ -4,12 +4,25 @@
 // a = -9 b = -3->max = -3
 
 Console.WriteLine("Введите число a = ");
-int A = int.Parse(Console.ReadLine());
+int A = int.Parse(Console.ReadLine()!);
 Console.WriteLine("Введите число b = ");
-int B = int.Parse(Console.ReadLine());
+int B = int.Parse(Console.ReadLine()!);
+
 if (A>B)
 {
-Console.Write("a= ",A,"b = ",B,"Max = ",A);
+Console.Write("a = ");
+Console.WriteLine(A);
+Console.Write("b = ");
+Console.WriteLine(B);
+Console.Write("Max = ");
+Console.Write(A);
 }
 else 
-Console.Write("a= ",A,"b = ",B,"Max = ",B);
+{
+Console.Write($"a = ");
+Console.WriteLine(A);
+Console.Write($"b = ");
+Console.WriteLine(B);
+Console.Write("Max = ");
+Console.Write(B);
+}
