@@ -2,7 +2,7 @@
 // 645 -> 5
 // 78 -> третьей цифры нет
 // 32679 -> 6
-Console.Write("Введите число = ");
+Console.Write("Введите число в диапазоне от 0 до 100000 = ");
 int num = int.Parse(Console.ReadLine());
 if (num<100)
 {
