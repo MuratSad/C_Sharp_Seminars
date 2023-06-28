@@ -3,3 +3,7 @@
 // 44 5 78 -> 78
 // 22 3 9 -> 22
 
+Console.WriteLine("Введите число a = ");
+int A = int.Parse(Console.ReadLine()!);
+Console.WriteLine("Введите число b = ");
+int B = int.Parse(Console.ReadLine()!);
