@@ -3,9 +3,9 @@
 
 int sum (int num)
 {
+    int result=0;
     for (int i=0;i<=num;i++)
     {
-    int result=0;
     result=result+i;
     }
     return result;
