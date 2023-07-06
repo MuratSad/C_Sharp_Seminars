@@ -12,5 +12,5 @@ int Count (int num)
     }
 return result;
 }
-int A=int.Parse(Console.ReadLine());
+int A=int.Parse(Console.ReadLine()!);
 Console.WriteLine(Count(A));

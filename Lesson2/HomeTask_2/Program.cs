@@ -3,11 +3,11 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 Console.Write("Введите число в диапазоне от 0 до 99999 = ");
-int num = int.Parse(Console.ReadLine());
+int num = int.Parse(Console.ReadLine()!);
 while (num < 0 | num > 99999)
 {
     Console.WriteLine($"число {num} не входит в заданный диапазон");
-    num = int.Parse(Console.ReadLine());
+    num = int.Parse(Console.ReadLine()!);
 }
 if (num < 100)
 {
