@@ -14,7 +14,8 @@ int [] CreateMassive(int Size,int MinValue,int MaxValue) //Функция для
 }
 void SumPosNeg(int[] Array)
 {
-int pos=neg=0;
+int pos=0;
+int neg=0;
 for (int i=0;i<Array.Length;i++)
 {
     if (Array[i]>=0)
@@ -23,6 +24,6 @@ for (int i=0;i<Array.Length;i++)
     neg=neg+Array[i];
 }
 Console.WriteLine($"neg={neg}");
-Connsole.WriteLine($"pos={pos}");
+Console.WriteLine($"pos={pos}");
 }
-SumPosNeg(CreateMassive());
+SumPosNeg(CreateMassive(12,-9,10));
