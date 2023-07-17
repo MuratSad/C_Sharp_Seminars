@@ -18,14 +18,15 @@ void PointOfCrossLines(int b1, int k1, int b2, int k2)
     double y = 0;
     if (k1 - k2 != 0)
     {
-        if(k1-k2<0)
-        {
-        x = (b2 - b1)/Math.Abs(k1 - k2);
-        }
-        else x = (b2 - b1) / (k1 - k2);
+        x = (b2 - b1) /(double)(k1 - k2);
     }
-    else Console.WriteLine("k1=k2, происходит деление на ноль");
+    else 
+    {
+        Console.WriteLine("k1=k2, происходит деление на ноль");
+        return;
+    }
     y = k1 * x + b1;
     Console.WriteLine($"b1 = {b1}, k1 = {k1},  b2 = {b2}, k2 = {k2}, => ({x} , {y})");
 }
 PointOfCrossLines(b1, k1, b2, k2);
+
